@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Estacionamientos FI</title>
+        <link href="estilos.css" rel="stylesheet" type="text/css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    </head>
+    <body>
+        <header>
+			<div class="logoUnam">
+				<img class=alineadoTextoCentro src="UNAM.png" alt="unam_logo" width="55">
+				<p class=texto>Universidad Nacional<br>Autónoma de México</p>
+			</div>
+			<div class="logoFi">
+				<p class=texto>Facultad de Ingeniería</p> 
+				<img class=alineadoTextoCentro src="FI.png" alt="fi_logo" width="55">
+			</div>
+        </header>
+        <div id="relleno"></div>
+        <div class="mensajeBienvenida"><h3>Bienvenido Usuario que Registra</h3></div>
+        <main id="pantallaUserR">
+            <section>
+                <h2>Formulario</h2>
+            </section>
+            <section class="eFormulario">
+                <form action="post" class="formulario">
+                    <p id="pFormulario">
+                        Nombre del usuario <input type="text" name="nombrecompleto" placeholder="Nombre">
+                    </p>
+                    <p id="pFormulario">
+                        Cantidad de autos a registrar <input type="number" name="cantautos" min="1" placeholder=" Cantidad de autos">
+                    </p>
+                    <p id="pFormulario">
+                        Placas <input type="text" name="placas" placeholder="Placas" maxlength="7">
+                    </p>
+                    <p id="pFormulario">
+                        Color del automóvil <input type="text" name="colorauto" placeholder="Color">
+                    </p>
+                    <p id="pFormulario">
+                        Marca del automóvil <input type="text" name="marcaauto" placeholder="Marca">
+                    </p>
+                    <p id="pFormulario">
+                        Tarjeta de circulación <input type="file" name="tarjetacirculacion">
+                    </p>
+                    <p id="pFormulario">
+                        Identificación <input type="file" name="identificacion">
+                    </p>
+                </form>
+            </section>
+            <section>
+                
+            </section>
+            <section>
+                <center>
+                    <button class="botonEnvio" onclick="envInformacioneImpT()">Enviar Información</button>
+                </center>
+            </section>
+            <section>
+                <a href="index.html" id="salidaInicioF">
+                    <center>
+                        Salir
+                    </center>
+                </a>
+            </section>
+        </main>
+        <footer>Terra Innova Software</footer>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+		<title>Estacionamientos FI</title>
+		<link href="estilos.css" rel="stylesheet" type="text/css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    </head>
+    <body>
+		<header>
+			<div class="logoUnam">
+				<img class=alineadoTextoCentro src="UNAM.png" alt="unam_logo" width="55">
+				<p class=texto>Universidad Nacional<br>Autónoma de México</p>
+			</div>
+			<div class="logoFi">
+				<p class=texto>Facultad de Ingeniería</p> 
+				<img class=alineadoTextoCentro src="FI.png" alt="fi_logo" width="55">
+			</div>
+		</header>
+		<div id="relleno"></div>
+		<main>
+			<h1>Estacionamientos FI</h1>
+			<hr size="4" noshade="noshade" width="100%" />
+
+			<div class="login">
+				<h6>Inicio de Sesión</h6>
+				<form method="post" name="sesionInicio">
+					<p><input type="text" name="user" value="" placeholder="Usuario"></p>
+					<p><input type="password" name="password" value="" placeholder="Contraseña"></p>
+					<p class="remember_me">
+						<label>
+							<input type="checkbox" name="remember_me" id="remember_me">
+							Recuérdame
+						</label>
+					</p>
+					<p class="submit"><input type="button" value="Ingresar" onclick="inicioSesion()"></p>
+				</form>
+				<div class="login-help">
+					<p><a href="#">Recuperar Contraseña</a></p>
+				</div>
+			</div>
+
+			<div class="alert alert-warning" role="alert" id="contenedorAlerta">
+				Los datos para ingresar al sistema son los siguientes:
+				<ul>
+					<li>Si eres profesor o administrativo de la facultad, en el campo "Usuario" ingresa tu RFC.</li>
+					<li>En caso de ser alumno ingresa tu numero de cuenta.</li>
+					<li>La contraseña es tu fecha de nacimiento en formato ddmmaaaa</li>
+				</ul>
+			</div>
+		</main>
+		<footer>Terra Innova Software</footer>
+		<script src="scripts/main.js"></script>
+    </body>
+</html>
